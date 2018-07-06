@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RestorApp"
+            android:textSize="40sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/main_container_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/main_title">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/main_username"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Username"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/main_container_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:passwordToggleEnabled="true"
+            android:layout_below="@+id/main_container_username">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/main_password"
+                android:layout_width="250dp"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/main_btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_container_password"
+            android:layout_alignEnd="@+id/main_container_password"
+            android:layout_alignRight="@+id/main_container_password"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:text="Iniciar sesión"
+            />
+
+        <Button
+            android:id="@+id/main_btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_btn_login"
+            android:layout_alignEnd="@+id/main_btn_login"
+            android:layout_alignRight="@+id/main_btn_login"
+            android:padding="16dp"
+            android:text="Registro"
+            android:background="#0000"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

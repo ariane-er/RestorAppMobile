@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_marker_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE RESTAURANTE"/>
+
+    <TextView
+        android:id="@+id/view_marker_details_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAGS"/>
+    <TextView
+        android:id="@+id/view_marker_details_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESCRIPCIÓN"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servicios disponibles:"/>
+
+    <TextView
+        android:id="@+id/view_marker_details_details"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE DETALLE "/>
+
+</LinearLayout>
